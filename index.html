@@ -1,387 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Privacy Policy - IslamEverywhere</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.7;
-            margin: 0;
-            background: #f7f9f8;
-            color: #222;
-        }
-
-        header {
-            background: #0b6b4f;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-
-        header p {
-            margin-top: 10px;
-            opacity: 0.9;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 35px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-        }
-
-        h2 {
-            color: #0b6b4f;
-            margin-top: 35px;
-        }
-
-        h3 {
-            margin-top: 25px;
-        }
-
-        a {
-            color: #0b6b4f;
-        }
-
-        .updated {
-            background: #eef7f3;
-            padding: 12px 15px;
-            border-left: 4px solid #0b6b4f;
-            margin: 20px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            color: #666;
-            font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-            main {
-                margin: 15px;
-                padding: 22px;
-            }
-
-            header h1 {
-                font-size: 26px;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0f6b53">
+  <meta name="description" content="Privacy Policy for Islam Everywhere, the Salah and Qaza tracking app.">
+  <title>Privacy Policy — Islam Everywhere</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f3e9; --surface: rgba(255,255,255,.9); --text: #17251f;
+      --muted: #5e6b65; --primary: #0f6b53; --soft: #e2f1ea;
+      --gold: #b6872d; --border: #d9ded8; --shadow: 0 16px 42px rgba(26,54,43,.1);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1713; --surface: rgba(19,37,31,.92); --text: #edf6f1;
+        --muted: #adbbb4; --primary: #69c7a3; --soft: #183e31;
+        --gold: #e0b65f; --border: #2b463c; --shadow: 0 16px 42px rgba(0,0,0,.28);
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--text);
+      background:
+        radial-gradient(circle at 12% 0%, rgba(182,135,45,.12), transparent 28rem),
+        radial-gradient(circle at 88% 8%, rgba(15,107,83,.13), transparent 30rem),
+        var(--bg);
+      font: 16px/1.68 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    a { color: var(--primary); text-underline-offset: 3px; }
+    .skip {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10; padding: .7rem 1rem;
+      color: #fff; background: #0f6b53; border-radius: .6rem;
+    }
+    .skip:focus { top: 1rem; }
+    .page { width: min(100% - 2rem, 52rem); margin: auto; padding: 2rem 0 4.5rem; }
+    .hero {
+      position: relative; overflow: hidden; padding: clamp(1.6rem,5vw,3rem); color: #fff;
+      background: linear-gradient(145deg,#0a4d3c,#0f7559); border-radius: 1.5rem;
+      border: 1px solid rgba(255,255,255,.14); box-shadow: var(--shadow);
+    }
+    .hero::before, .hero::after {
+      content: ""; position: absolute; border: 1px solid rgba(235,201,125,.25);
+      transform: rotate(45deg);
+    }
+    .hero::before { width: 11rem; height: 11rem; right: -4rem; top: -5rem; }
+    .hero::after { width: 7rem; height: 7rem; right: 2rem; bottom: -5rem; }
+    .eyebrow {
+      margin: 0 0 .55rem; color: #f1d79c; font-size: .78rem; font-weight: 800;
+      letter-spacing: .13em; text-transform: uppercase;
+    }
+    h1 { margin: 0; max-width: 13ch; font-size: clamp(2rem,7vw,3.4rem); line-height: 1.05; letter-spacing: -.035em; }
+    .hero-copy { max-width: 42rem; margin: 1rem 0 0; color: #e5f3ed; }
+    .meta { margin: 1rem 0 0; color: #c9e2d8; font-size: .9rem; }
+    .summary, .toc, section {
+      margin-top: 1.15rem; padding: clamp(1.2rem,4vw,1.8rem); background: var(--surface);
+      border: 1px solid var(--border); border-radius: 1.15rem;
+      box-shadow: 0 8px 26px rgba(26,54,43,.055); backdrop-filter: blur(8px);
+    }
+    .summary { border-left: .35rem solid var(--gold); }
+    .summary p { margin: 0; }
+    h2 { margin: 0 0 .75rem; color: var(--primary); font-size: 1.28rem; line-height: 1.3; }
+    h3 { margin: 1.35rem 0 .35rem; font-size: 1.03rem; }
+    p { margin: .65rem 0; }
+    ul { margin: .55rem 0; padding-left: 1.25rem; }
+    li + li { margin-top: .42rem; }
+    .toc ul {
+      display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .45rem 1.2rem;
+      margin: 0; padding: 0; list-style: none;
+    }
+    .toc a { display: inline-block; padding: .2rem 0; font-weight: 650; }
+    .table-wrap { overflow-x: auto; margin: .9rem 0; }
+    table { width: 100%; min-width: 39rem; border-collapse: collapse; font-size: .93rem; }
+    th, td { padding: .72rem .78rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+    th { background: var(--soft); }
+    .note { margin-top: 1rem; padding: .85rem 1rem; background: var(--soft); border-radius: .8rem; }
+    .contact { text-align: center; border-color: color-mix(in srgb,var(--gold) 55%,var(--border)); }
+    .contact a { font-weight: 750; }
+    footer { padding: 1.6rem .5rem 0; color: var(--muted); font-size: .86rem; text-align: center; }
+    code { padding: .12rem .35rem; background: var(--soft); border-radius: .35rem; font-size: .9em; }
+    @media (max-width: 38rem) {
+      .page { width: min(100% - 1rem,52rem); padding-top: .5rem; }
+      .hero, .summary, .toc, section { border-radius: 1rem; }
+      .toc ul { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
 </head>
-
 <body>
-
-<header>
-    <h1>Privacy Policy</h1>
-    <p>IslamEverywhere</p>
-</header>
-
-<main>
-
-    <div class="updated">
-        <strong>Last Updated:</strong> [DATE]
-    </div>
-
-    <h2>1. Introduction</h2>
-
-    <p>
-        Welcome to <strong>IslamEverywhere</strong> ("we", "our", "us").
-        This Privacy Policy explains how we collect, use, store, and protect
-        information when you use the IslamEverywhere mobile application
-        ("App").
-    </p>
-
-    <p>
-        By using IslamEverywhere, you agree to the practices described in
-        this Privacy Policy.
-    </p>
-
-
-    <h2>2. Information We Collect</h2>
-
-    <p>
-        Depending on how you use the App, we may collect or receive certain
-        information.
-    </p>
-
-    <h3>2.1 Information You Provide</h3>
-
-    <p>
-        You may provide information such as:
-    </p>
-
-    <ul>
-        <li>Name</li>
-        <li>Email address</li>
-        <li>Account information</li>
-        <li>Profile information</li>
-        <li>Information you voluntarily provide to us</li>
-    </ul>
-
-    <p>
-        <strong>Only keep the items above that your app actually collects.</strong>
-    </p>
-
-
-    <h3>2.2 Device Information</h3>
-
-    <p>
-        The App may collect certain technical information automatically,
-        such as:
-    </p>
-
-    <ul>
-        <li>Device type</li>
-        <li>Operating system</li>
-        <li>App version</li>
-        <li>Language</li>
-        <li>General device information</li>
-        <li>Crash and diagnostic information</li>
-    </ul>
-
-
-    <h3>2.3 Location Information</h3>
-
-    <p>
-        If the App provides features such as prayer times, Qibla direction,
-        or location-based Islamic information, the App may request access
-        to your device location.
-    </p>
-
-    <p>
-        Location access is used only for the features that require it.
-    </p>
-
-    <p>
-        <strong>
-            Remove this section if your app does not request location permission.
-        </strong>
-    </p>
-
-
-    <h2>3. How We Use Information</h2>
-
-    <p>
-        We may use information to:
-    </p>
-
-    <ul>
-        <li>Provide and operate the App</li>
-        <li>Provide Islamic content and features</li>
-        <li>Provide prayer times and Qibla-related features</li>
-        <li>Improve the App</li>
-        <li>Fix bugs and technical problems</li>
-        <li>Maintain security</li>
-        <li>Respond to user requests</li>
-        <li>Provide important service notifications</li>
-    </ul>
-
-
-    <h2>4. Islamic Content</h2>
-
-    <p>
-        IslamEverywhere may provide Islamic educational and informational
-        content, including but not limited to Quranic content, Hadith,
-        duas, prayer information, Islamic articles, and other educational
-        materials.
-    </p>
-
-    <p>
-        We aim to provide accurate and respectful Islamic content. However,
-        users should independently verify religious information when
-        appropriate and consult qualified scholars for religious rulings
-        or personal religious questions.
-    </p>
-
-
-    <h2>5. Third-Party Services</h2>
-
-    <p>
-        The App may use third-party services to provide certain functionality,
-        analytics, authentication, hosting, notifications, advertising, or
-        other services.
-    </p>
-
-    <p>
-        Current third-party services used by the App:
-    </p>
-
-    <ul>
-        <li>[SERVICE NAME - e.g. Firebase]</li>
-        <li>[SERVICE NAME]</li>
-        <li>[SERVICE NAME]</li>
-    </ul>
-
-    <p>
-        We recommend reviewing the privacy policies of any third-party
-        services used by the App.
-    </p>
-
-
-    <h2>6. Advertising</h2>
-
-    <p>
-        [CHOOSE ONE]
-    </p>
-
-    <p>
-        The App does not currently display advertisements.
-    </p>
-
-    <p>
-        OR
-    </p>
-
-    <p>
-        The App may display advertisements provided by third-party
-        advertising services. These services may collect information
-        according to their own privacy policies.
-    </p>
-
-
-    <h2>7. Analytics</h2>
-
-    <p>
-        [CHOOSE ONE]
-    </p>
-
-    <p>
-        We do not currently use third-party analytics services.
-    </p>
-
-    <p>
-        OR
-    </p>
-
-    <p>
-        We may use analytics services to understand how users interact
-        with the App and to improve its performance.
-    </p>
-
-
-    <h2>8. Data Sharing</h2>
-
-    <p>
-        We do not sell your personal information.
-    </p>
-
-    <p>
-        We may share information with service providers when necessary
-        to operate, maintain, secure, or improve the App, or when required
-        by applicable law.
-    </p>
-
-
-    <h2>9. Data Security</h2>
-
-    <p>
-        We take reasonable measures to protect information from unauthorized
-        access, alteration, disclosure, or destruction.
-    </p>
-
-    <p>
-        However, no method of electronic transmission or storage is completely
-        secure, and we cannot guarantee absolute security.
-    </p>
-
-
-    <h2>10. Data Retention</h2>
-
-    <p>
-        We retain information only for as long as reasonably necessary for
-        the purposes described in this Privacy Policy, unless a longer
-        retention period is required by law.
-    </p>
-
-
-    <h2>11. Children's Privacy</h2>
-
-    <p>
-        IslamEverywhere is not intended to knowingly collect personal
-        information from children in violation of applicable laws.
-    </p>
-
-    <p>
-        If you believe that a child has provided personal information to us,
-        please contact us using the information below.
-    </p>
-
-
-    <h2>12. Your Privacy Rights</h2>
-
-    <p>
-        Depending on your location and applicable laws, you may have rights
-        regarding your personal information, including rights to request
-        access, correction, deletion, or other actions concerning your data.
-    </p>
-
-    <p>
-        To make a privacy-related request, contact us using the email address
-        below.
-    </p>
-
-
-    <h2>13. Account and Data Deletion</h2>
-
-    <p>
-        If the App provides user accounts, you may request deletion of your
-        account and associated personal information by contacting us.
-    </p>
-
-    <p>
-        <strong>
-            Email: [YOUR PRIVACY/CONTACT EMAIL]
-        </strong>
-    </p>
-
-
-    <h2>14. Changes to This Privacy Policy</h2>
-
-    <p>
-        We may update this Privacy Policy from time to time.
-        When we make changes, we will update the "Last Updated" date
-        at the top of this page.
-    </p>
-
-
-    <h2>15. Contact Us</h2>
-
-    <p>
-        If you have questions about this Privacy Policy or your personal
-        information, please contact us:
-    </p>
-
-    <p>
-        <strong>App Name:</strong> IslamEverywhere
-        <br>
-        <strong>Email:</strong> [YOUR EMAIL ADDRESS]
-        <br>
-        <strong>Developer/Company:</strong> [YOUR NAME OR COMPANY NAME]
-        <br>
-        <strong>Country:</strong> [YOUR COUNTRY]
-    </p>
-
-</main>
-
-<footer>
-    © <span id="year"></span> IslamEverywhere. All rights reserved.
-</footer>
-
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  <a class="skip" href="#content">Skip to policy</a>
+  <main class="page" id="content">
+    <header class="hero">
+      <p class="eyebrow">Islam Everywhere</p>
+      <h1>Privacy Policy</h1>
+      <p class="hero-copy">Clear information about what the app processes, what remains on your device, and which Google services support advertising, reliability and subscriptions.</p>
+      <p class="meta">Effective and last updated: 17 August 2026</p>
+    </header>
+
+    <aside class="summary" aria-label="Privacy summary">
+      <p><strong>In short:</strong> Islam Everywhere has no user accounts and no developer-operated server. Your prayer records, profile details, settings and cached location remain on your device. Google services separately process limited device, usage, advertising, diagnostic, installation and purchase information as explained below.</p>
+    </aside>
+
+    <nav class="toc" aria-label="Policy contents">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#about">About this policy</a></li>
+        <li><a href="#local">Information kept locally</a></li>
+        <li><a href="#location">Location and Qibla</a></li>
+        <li><a href="#services">Google services</a></li>
+        <li><a href="#permissions">Android permissions</a></li>
+        <li><a href="#sharing">Sharing and selling</a></li>
+        <li><a href="#retention">Retention and security</a></li>
+        <li><a href="#choices">Your choices and rights</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>1. About this policy</h2>
+      <p>This Privacy Policy applies to the Android application <strong>Islam Everywhere</strong> (package <code>com.islamofficialeverywhere.app</code>), referred to as “the app,” “we,” or “us.” It explains how information is handled when you use the app.</p>
+      <p>The app is designed primarily to work locally. It does not require an account and does not upload your personal prayer history to a server operated by us.</p>
+    </section>
+
+    <section id="local">
+      <h2>2. Information kept on your device</h2>
+      <p>The app may save the following information in local app storage:</p>
+      <ul>
+        <li>Your optional display name, date of birth and selected prayer-calculation start age.</li>
+        <li>Your daily Salah status, Qaza records, totals, streaks and progress.</li>
+        <li>Your selected madhab, language, theme, reminder, sound and other settings.</li>
+        <li>Your premium-entitlement status and temporary rewarded-ad theme access.</li>
+        <li>Your last successfully obtained coordinates and calculated prayer schedule, so prayer times and Qibla can continue to work offline.</li>
+      </ul>
+      <p>We do not receive this locally stored information. Android backup is disabled for the app. You can erase it using <strong>Reset all data</strong> in Settings or by uninstalling the app.</p>
+    </section>
+
+    <section id="location">
+      <h2>3. Location, prayer times and Qibla</h2>
+      <p>If you grant permission, the app accesses approximate or precise device location to calculate prayer times, Qibla direction and distance to Makkah. These calculations happen on your device. The most recent coordinates are cached only in local app storage for offline use; they are not uploaded to a server operated by us.</p>
+      <p>Location permission is optional. If declined, location-dependent features may be unavailable or may continue using a previously cached location.</p>
+      <h3>Nearby Masjids</h3>
+      <p>If you deliberately tap the option to find nearby masjids, the app opens a mapping app or Google Maps search and may include your coordinates in that request. The selected mapping provider then handles the request under its own privacy policy. The app does not send coordinates to a mapping provider unless you choose this action.</p>
+    </section>
+
+    <section id="services">
+      <h2>4. Information processed by Google services</h2>
+      <p>The app uses the services below. They may communicate with Google even though your prayer records remain local. The exact information processed can vary by device, Android version, consent choices and service configuration.</p>
+      <div class="table-wrap" role="region" aria-label="Google services data table" tabindex="0">
+        <table>
+          <thead><tr><th>Service</th><th>Information it may process</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Google AdMob and User Messaging Platform</td>
+              <td>Advertising or app-set identifiers, IP address, approximate region, device and app information, ad interactions, consent choices and diagnostics.</td>
+              <td>Request, display, limit, measure and protect banner, interstitial, app-open and rewarded ads, and manage applicable privacy choices.</td>
+            </tr>
+            <tr>
+              <td>Firebase Analytics</td>
+              <td>App interactions, sessions, device model, operating system, app version, identifiers and approximate region derived by Google.</td>
+              <td>Understand aggregate app usage and improve features and reliability.</td>
+            </tr>
+            <tr>
+              <td>Firebase Crashlytics</td>
+              <td>Crash reports, stack traces, diagnostic state, app version, device model, operating system and installation identifiers.</td>
+              <td>Identify, investigate and fix crashes and technical faults.</td>
+            </tr>
+            <tr>
+              <td>Firebase Remote Config</td>
+              <td>Firebase installation ID and app/device configuration needed to return appropriate settings.</td>
+              <td>Provide settings such as ad-format controls and regional Hijri-date adjustments without an app update.</td>
+            </tr>
+            <tr>
+              <td>Google Play Billing</td>
+              <td>Google account purchase context, selected subscription, price, transaction and purchase token/status information. Google handles payment-card details; the app does not receive them.</td>
+              <td>Offer Premium, confirm active entitlement, acknowledge purchases and restore access after reinstalling or changing devices.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Advertising choices</h3>
+      <p>Ad requests made by the app are configured as non-personalized. They are not selected from your past behavior, but Google may still use identifiers or local storage for frequency capping, fraud prevention and aggregated reporting. Where required, Google’s consent form is shown before advertising is initialized. If Google requires an ongoing privacy-choice entry point, the app displays <strong>Ad privacy choices</strong> in Settings.</p>
+      <p class="note">Google processes information under its own documentation. See the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>, <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Privacy and Security in Firebase</a>, and <a href="https://payments.google.com/legaldocument?family=0.privacynotice&amp;hl=en" rel="noopener noreferrer">Google Payments Privacy Notice</a>.</p>
+    </section>
+
+    <section id="permissions">
+      <h2>5. Android permissions</h2>
+      <div class="table-wrap" role="region" aria-label="Android permissions table" tabindex="0">
+        <table>
+          <thead><tr><th>Permission or access</th><th>Why the app uses it</th></tr></thead>
+          <tbody>
+            <tr><td>Approximate and precise location</td><td>Calculate local prayer times, Qibla direction and distance to Makkah.</td></tr>
+            <tr><td>Notifications</td><td>Show prayer-time and daily reminders that you enable.</td></tr>
+            <tr><td>Exact alarms</td><td>Deliver enabled prayer reminders at the intended time rather than after an unpredictable system delay.</td></tr>
+            <tr><td>Run at startup</td><td>Restore enabled prayer alarms after the device restarts or its time settings change.</td></tr>
+            <tr><td>Foreground service and media playback</td><td>Play an enabled adhan or reminder audio reliably, including while the app is not open.</td></tr>
+            <tr><td>Wake lock and vibration</td><td>Deliver an enabled reminder reliably and provide alert vibration.</td></tr>
+            <tr><td>Internet and network state</td><td>Connect to Firebase, AdMob, Google Play Billing and optional external map searches.</td></tr>
+            <tr><td>Advertising identifiers and Android ad services</td><td>Support ad delivery, measurement, frequency controls and fraud prevention.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Permissions are requested only when relevant to a feature. You can change them in Android Settings, although disabling one may prevent the related feature from working.</p>
+    </section>
+
+    <section id="sharing">
+      <h2>6. Sharing, selling and disclosure</h2>
+      <ul>
+        <li>We do not sell your prayer records, profile information or cached location.</li>
+        <li>We do not share that local information with advertisers.</li>
+        <li>Google processes the service information described above for advertising, analytics, diagnostics, configuration and billing.</li>
+        <li>A mapping provider receives a nearby-masjid search only when you choose to open that external feature.</li>
+        <li>We may disclose information if legally required or necessary to protect users, rights and app security, but we cannot disclose local records that we do not possess.</li>
+      </ul>
+      <p>If you contact us by email, your address, message and anything you voluntarily include are received by us and the email providers involved. We use them only to reply, provide support, investigate issues and maintain necessary correspondence.</p>
+    </section>
+
+    <section id="retention">
+      <h2>7. Retention, security and international processing</h2>
+      <p>Local information remains on your device until you reset it, clear app storage or uninstall the app. We do not operate cloud backup for prayer records. Support emails are kept only as long as reasonably necessary to address the request, maintain records and meet legal obligations.</p>
+      <p>Google retains service information according to its own policies and settings. Google and other service providers may process information in countries other than where you live, subject to their legal safeguards.</p>
+      <p>We use measures appropriate to a local-first app, including disabling Android backup for app data. No method of storage or electronic processing is completely secure, so absolute security cannot be guaranteed.</p>
+    </section>
+
+    <section id="choices">
+      <h2>8. Your choices and privacy rights</h2>
+      <ul>
+        <li><strong>Location:</strong> deny or revoke permission in Android Settings. Clear local app data to remove cached coordinates.</li>
+        <li><strong>Notifications and alarms:</strong> disable reminders in the app or change notification and exact-alarm access in Android Settings.</li>
+        <li><strong>Advertising:</strong> use Ad privacy choices in Settings when available, and reset or delete your Advertising ID through Android privacy settings.</li>
+        <li><strong>Local records:</strong> use Reset all data or uninstall the app.</li>
+        <li><strong>Subscriptions:</strong> manage or cancel through Google Play. Access normally continues until the end of the paid period.</li>
+        <li><strong>Support correspondence:</strong> contact us to request deletion of information you previously sent directly to us, subject to legal retention needs.</li>
+      </ul>
+      <p>Depending on where you live, you may have additional rights such as access, correction, deletion, restriction, objection or withdrawal of consent. Because most app information is stored only on your device, the most direct way to exercise those rights for local records is through the controls above. You may contact us about information we actually possess.</p>
+    </section>
+
+    <section id="children">
+      <h2>9. Children</h2>
+      <p>The app is not directed to children under 13, and we do not knowingly collect personal information directly from children under 13. If you believe a child sent personal information through support email, contact us so we can review and delete it where appropriate. Parents and guardians should supervise children’s use of the app and device permissions.</p>
+    </section>
+
+    <section id="changes">
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this policy when the app, service providers or legal requirements change. The revised page will show a new effective date. Material changes may also be communicated through the app or store listing when appropriate.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>11. Contact</h2>
+      <p>For privacy questions or requests, contact Islam Everywhere at:</p>
+      <p><a href="mailto:islamofficialeverywhere@gmail.com">islamofficialeverywhere@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>Islam Everywhere · Android package <code>com.islamofficialeverywhere.app</code></p>
+    </footer>
+  </main>
 </body>
 </html>
